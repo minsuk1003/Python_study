@@ -10,7 +10,6 @@ print(ssg)
 
 ssg.pop()
 
-
 ssg.sort()
 print(ssg)
 
