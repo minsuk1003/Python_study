@@ -28,5 +28,29 @@ def say_nick(nick):
 say_nick("민석")
 
 
+# 297번
+per = ["10.31", "", "8.00"]
+new_per = []
+
+for i in per:
+    try:
+        new_per.append(float(per))
+    except:
+        new_per.append(0)
+
+print(new_per)
 
 
+
+# 300번
+per = ["10.31", "", "8.00"]
+
+for i in per:
+    try:
+        print(float(i))
+    except:
+        print("float type으로 변환할 수 없습니다.")
+    else:
+        print("float type으로 변환되었습니다.")
+    finally:
+        print("감사합니다.")
