@@ -21,4 +21,7 @@ def two_times(x):
 result = list(map(two_times, [1,2,3,4]))
 print(result)
 
+print(list(map(lambda a: a*2, [1,2,3,4])))
+
 # zip
+print(list(zip([1,2,3], [4,5,6], [7,8])))
