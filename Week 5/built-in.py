@@ -7,7 +7,7 @@ print(eval("sum([2,3,3,4])"))
 
 # filter
 def positive(x):
-    return x > 0
+    return x > 0 or x < 0
 
 print(list(filter(positive, (range(-10,15)))))
 

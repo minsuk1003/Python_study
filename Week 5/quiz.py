@@ -14,16 +14,18 @@ print(multiple_sum(1000))
 # list comprehension
 print(sum(list([x for x in range(1000) if x%3==0 or x%5==0])))
 
-
 # 2번 문제
 # 풀이 1
 # 너무 복잡하다
+# 10 -> '10' -> ['1', '0'] -> count
+
 def num_count(start, end):
     num_count_list = []
     for num in range(start, end+1):
-        str_num = str(num)
+        str_num = str(num) # str로 변환
         num_count_list.append(list(str_num))
-    result = [data for inner_list in num_count_list for data in inner_list]
+    print(num_count_list)
+    result = [data for inner_list in num_count_list for data in inner_list] # 2차원 -> 1차원 리스트로 변환
     print(result)
 
     return [result.count(str(i)) for i in range(10)]
@@ -39,4 +41,4 @@ def num_count(start, end):
             count[int(i)] += 1
     return count
 
-print(num_count(10, 15))
+print(num_count(10, 15)) 
